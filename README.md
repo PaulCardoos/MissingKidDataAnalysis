@@ -31,4 +31,4 @@ easily install them using pip or however you install your packages. Next, clone 
 git clone https://github.com/PaulCardoos/MissingKidDataAnalysis.git
 ```
 Now you can navigate into the folder that contains the code you want to run and simply run it however you run your python code. Enjoy!
-
+(written by Paul Cardoos)
