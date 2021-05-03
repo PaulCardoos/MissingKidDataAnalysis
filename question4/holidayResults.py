@@ -1,3 +1,8 @@
+"""
+by Paul Cardoos
+question 4
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -32,7 +37,8 @@ count = 0
 for i in results_from_300:
     if i["percentage"] > normalizeHoliday: 
         count += 1
-
+        
+#if this result is less than .05 our claim is statistically significant else our claim is not
 pval = count / len(results_from_300)
 print(pval)
 
