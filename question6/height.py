@@ -1,10 +1,15 @@
+"""
+written by Paul Cardoos and Ahmad Nehala
+question 6
+"""
+
 #import pandas 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
 #load csv file
-data = pd.read_csv('missingKids.csv')
+data = pd.read_csv('../missingKids.csv')
 
 #get relevant data (in this case missing Since and AgeNow)
 data_frame = pd.DataFrame(data, columns=["height", "firstName"])

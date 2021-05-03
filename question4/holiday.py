@@ -1,3 +1,8 @@
+"""
+written by Paul Cardoos 
+question 4
+"""
+
 #the main holiday dates christmas, haloween, new years, independence day and thanksgiving
 halloween = ["Oct 31", "Nov 1", "Nov 2", "Nov 3", "Nov 4", "Nov 5","Nov 6"]
 christmas = ["Dec 25", "Dec 26", "Dec 27", "Dec 28", "Dec 29", "Dec 30"]

@@ -1,3 +1,10 @@
+"""
+Code to generate statistics about age kids went missing
+
+written by Paul Cardoos and Aanab Nehala 
+question 2
+"""
+
 #code to find standard deviation, median, mean, average of age when kids went missing
 
 #import pandas for data manipulation
@@ -10,7 +17,7 @@ from collections import Counter
 import numpy as np
 
 #load csv file
-data = pd.read_csv('missingKids.csv')
+data = pd.read_csv('../missingKids.csv')
 
 #get relevant data (in this case missing Since and AgeNow)
 data_frame = pd.DataFrame(data, columns=["firstName", "missingSince", "ageNow"])
