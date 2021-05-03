@@ -1,6 +1,7 @@
 #import pandas 
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 #load csv file
 data = pd.read_csv('missingKids.csv')
@@ -49,3 +50,7 @@ print(np.mean(all_heights))
 
 #median of the heights from the kids that went missing
 print(np.median(all_heights))
+
+#boxplot
+plt.boxplot(all_heights)
+plt.show()
