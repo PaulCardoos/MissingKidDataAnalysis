@@ -5,7 +5,7 @@
 <li>Python</li>
 <li>Numpy</li>
 <li>Pandas</li>
-<li>Mathlabplot</li>
+<li>Matplotlib</li>
 <li>R</li>
 </ul>
 
