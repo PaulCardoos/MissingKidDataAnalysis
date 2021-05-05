@@ -10,7 +10,7 @@
 </ul>
 
 ## Description
-The following is a repository that contains code for a group project where we were asked to choose a data set, come up with questions to ask about the set, 
+The following is a repository that contains code for a group project for statistics cs345 where we were asked to choose a data set, come up with questions to ask about the set, 
 and use statistics and data analysis to describe them. Each folder matches a corresponding question, and the questions are located below.
 
 ## The Questions
