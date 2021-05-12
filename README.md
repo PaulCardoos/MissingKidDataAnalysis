@@ -6,6 +6,7 @@
 <li>Numpy</li>
 <li>Pandas</li>
 <li>Matplotlib</li>
+<li>Seaborn</li>
 <li>R</li>
 </ul>
 
