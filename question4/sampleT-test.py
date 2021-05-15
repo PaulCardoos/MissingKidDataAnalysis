@@ -27,10 +27,15 @@ df.drop('details', inplace=True, axis=1)
 
 #modify the missingSince column to work with in python
 #change format from Apr 6, 2007 to just Apr 6
-df["missingSince"] = df["missingSince"].apply(lambda x :str(x).split(",")[0])
+df["year"] = df["missingSince"].apply(lambda x :str(x).split(",")[1])
+df["missingDate"] = df["missingSince"].apply(lambda x :str(x).split(",")[0])
+df.drop('missingSince', inplace=True, axis=1)
+
+df = df[(df["year"].astype(int) > 2019) & (df["year"].astype(int) < 2021)]
 
 #group each day to get the total missing reports each day
-df = df.groupby(["missingSince"]).count()
+df = df.groupby(["missingDate"]).count()
+#print(df)
 
 #convert to series with data as index and total missing kid report for that day
 s = pd.Series(data=df["firstName"])
@@ -46,8 +51,11 @@ total_per_week = [0] * 53
 for num, week in enumerate(weeks):
     total_reports = 0
     for day in week:
-        total_reports += missing_kid_report[day]
-    
+        try:
+            total_reports += missing_kid_report[day]
+        except KeyError:
+            pass
+        
     #store total reports in match index for the week
     total_per_week[num + 1] = total_reports
 
