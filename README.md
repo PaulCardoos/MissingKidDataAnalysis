@@ -1,12 +1,16 @@
 # MissingKidDataAnalysis
 
-## Technologies
+## Technologies & Libraries
 <ul> 
 <li>Python</li>
 <li>Numpy</li>
 <li>Pandas</li>
 <li>Matplotlib</li>
-<li>Seaborn</li>
+<li>Beautiful Soup 4</li>
+<li>Selenium</li>
+<li>Geckodriver</li>
+<li>json</li>
+<li>requests</li>
 <li>R</li>
 </ul>
 
