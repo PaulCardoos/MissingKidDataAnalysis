@@ -30,20 +30,18 @@ for i in range(len(data_frame)):
     try:
         #get the year that the child went missing
         year = str(list(data_frame["missingSince"])[i]).split(", ")[1]
-        
         #the age the child would be now
         age = (list(data_frame["ageNow"])[i])
+        #get how long the child has been missing and subtract from ageNow
+        how_long_missing = 2021 - int(year)
+        #get age missing and store to array
+        age_missing = age - how_long_missing
 
         #check for nan or if age is 0 or 
         if np.isnan(age) or age == 0:
             #if nan (not a number) continue to next iteration
             continue
         
-        #get how long the child has been missing and subtract from ageNow
-        how_long_missing = 2021 - int(year)
-        
-        #get age missing and store to array
-        age_missing = age - how_long_missing
 
         #if age is -1 then the child is 1 when they went missing
         if age_missing == -1 :
