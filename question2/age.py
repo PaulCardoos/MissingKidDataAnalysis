@@ -62,6 +62,7 @@ for i in range(len(data_frame)):
 
 #get the count of how many kids went missing at each age
 age_went_missing_count = Counter(age_went_missing)
+print(len(age_went_missing_count))
 print("Number of kids that went missing at each age: " , age_went_missing_count)
 
 #a dictionary to keep the percentages for each kid that went missing
